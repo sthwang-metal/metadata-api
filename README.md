@@ -84,7 +84,7 @@ nats --server=nats:4222 --creds=/nsc/nkeys/creds/LOCAL/META/USER.creds sub --str
 ```
 
 **Interacting with the GraphQL queries:**
-> Go to localhost:7905/playground
+> Go to localhost:XXXX/playground
 
 ## Code of Conduct
 
