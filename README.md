@@ -75,14 +75,6 @@ To begin start by opening the devcontainer as outlined in the [Development Guide
 make go-run
 ```
 
-**To subscribe to the NATS stream:**
-```sh
-# if not created already
-nats --server=nats:4222 --creds=/nsc/nkeys/creds/LOCAL/META/USER.creds stream add $NAME --subjects='com.example.>'
-
-nats --server=nats:4222 --creds=/nsc/nkeys/creds/LOCAL/META/USER.creds sub --stream=$NAME
-```
-
 **Interacting with the GraphQL queries:**
 > Go to localhost:XXXX/playground
 
