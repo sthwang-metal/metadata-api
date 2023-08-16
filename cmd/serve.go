@@ -90,7 +90,6 @@ func serve(ctx context.Context) error {
 
 	entDB := entsql.OpenDB(dialect.Postgres, db)
 
-	logger.Infow("pub config", "pub config", config.AppConfig.Events.Publisher)
 	publisher, err := events.NewPublisher(config.AppConfig.Events.Publisher)
 	if err != nil {
 		logger.Fatal("unable to initialize event publisher", zap.Error(err))
